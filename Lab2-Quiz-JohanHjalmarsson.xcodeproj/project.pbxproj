@@ -13,6 +13,9 @@
 		041B568D20176C11003D25AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041B568C20176C11003D25AF /* Assets.xcassets */; };
 		041B569020176C11003D25AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041B568E20176C11003D25AF /* LaunchScreen.storyboard */; };
 		041B569320176C11003D25AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B569220176C11003D25AF /* main.m */; };
+		041B569B201770CE003D25AF /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B569A201770CE003D25AF /* QuizData.m */; };
+		041B569E2017716E003D25AF /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B569D2017716E003D25AF /* QuizViewController.m */; };
+		041B56A420177B0D003D25AF /* QuizGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B56A320177B0D003D25AF /* QuizGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		041B568F20176C11003D25AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041B569120176C11003D25AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041B569220176C11003D25AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041B5699201770CE003D25AF /* QuizData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizData.h; sourceTree = "<group>"; };
+		041B569A201770CE003D25AF /* QuizData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizData.m; sourceTree = "<group>"; };
+		041B569C2017716E003D25AF /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		041B569D2017716E003D25AF /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		041B56A220177B0D003D25AF /* QuizGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizGame.h; sourceTree = "<group>"; };
+		041B56A320177B0D003D25AF /* QuizGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,12 @@
 				041B568620176C11003D25AF /* ViewController.h */,
 				041B568720176C11003D25AF /* ViewController.m */,
 				041B568920176C11003D25AF /* Main.storyboard */,
+				041B569C2017716E003D25AF /* QuizViewController.h */,
+				041B569D2017716E003D25AF /* QuizViewController.m */,
+				041B56A220177B0D003D25AF /* QuizGame.h */,
+				041B56A320177B0D003D25AF /* QuizGame.m */,
+				041B5699201770CE003D25AF /* QuizData.h */,
+				041B569A201770CE003D25AF /* QuizData.m */,
 				041B568C20176C11003D25AF /* Assets.xcassets */,
 				041B568E20176C11003D25AF /* LaunchScreen.storyboard */,
 				041B569120176C11003D25AF /* Info.plist */,
@@ -142,6 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041B569B201770CE003D25AF /* QuizData.m in Sources */,
+				041B569E2017716E003D25AF /* QuizViewController.m in Sources */,
+				041B56A420177B0D003D25AF /* QuizGame.m in Sources */,
 				041B568820176C11003D25AF /* ViewController.m in Sources */,
 				041B569320176C11003D25AF /* main.m in Sources */,
 				041B568520176C11003D25AF /* AppDelegate.m in Sources */,
@@ -279,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCDJ56B3D4;
 				INFOPLIST_FILE = "Lab2-Quiz-JohanHjalmarsson/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JH.Lab2-Quiz-JohanHjalmarsson";
@@ -292,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCDJ56B3D4;
 				INFOPLIST_FILE = "Lab2-Quiz-JohanHjalmarsson/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JH.Lab2-Quiz-JohanHjalmarsson";
