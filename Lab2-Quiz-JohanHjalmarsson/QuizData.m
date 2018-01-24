@@ -21,7 +21,7 @@
           @"correctAnswer": @"Ca 84 %"
           },
     @"2":
-        @{@"question": @"Hur många stor del av de människor som dömts eller misstänkts för sexuellt ofredande är män?",
+        @{@"question": @"Hur stor del av de människor som dömts eller misstänkts för sexuellt ofredande är män?",
           @"answer1": @"Väldigt få",
           @"answer2": @"70 %",
           @"answer3": @"Ungefär hälften",

@@ -40,21 +40,18 @@
 }
 
 -(void) startGame {
-    
-        [self changeUi:NO];
-        [self enableButtons:self.answerOneButton];
-        [self enableButtons:self.answerTwoButton];
-        [self enableButtons:self.answerThreeButton];
-        [self enableButtons:self.answerFourButton];
-        self.scoreLabel.text = [self.quizGame returnScore];
-        self.correctAnswerLabel.text = @"";
-        self.questionTextView.text = [self.quizGame getQuestion];
-        [self.answerOneButton setTitle:[self.quizGame getAnswerOne] forState:UIControlStateNormal];
-        [self.answerTwoButton setTitle:[self.quizGame getAnswerTwo] forState:UIControlStateNormal];
-        [self.answerThreeButton setTitle:[self.quizGame getAnswerThree] forState:UIControlStateNormal];
-        [self.answerFourButton setTitle:[self.quizGame getAnswerFour] forState:UIControlStateNormal];
- 
-    
+    [self changeUi:NO];
+    [self enableButtons:self.answerOneButton];
+    [self enableButtons:self.answerTwoButton];
+    [self enableButtons:self.answerThreeButton];
+    [self enableButtons:self.answerFourButton];
+    self.scoreLabel.text = [self.quizGame returnScore];
+    self.correctAnswerLabel.text = @"";
+    self.questionTextView.text = [self.quizGame getQuestion];
+    [self.answerOneButton setTitle:[self.quizGame getAnswerOne] forState:UIControlStateNormal];
+    [self.answerTwoButton setTitle:[self.quizGame getAnswerTwo] forState:UIControlStateNormal];
+    [self.answerThreeButton setTitle:[self.quizGame getAnswerThree] forState:UIControlStateNormal];
+    [self.answerFourButton setTitle:[self.quizGame getAnswerFour] forState:UIControlStateNormal];
 }
 - (IBAction)answerOneClicked:(id)sender {
     [self isCorrectAnswer:self.answerOneButton];
@@ -80,8 +77,6 @@
     [self setUpGame];
     [self startGame];
 }
-
-
 - (void) isCorrectAnswer:(UIButton*)button {
     if ([self.quizGame isAnswerCorrect:button.currentTitle]) {
         self.correctAnswerLabel.text = [self.quizGame rightOrWrongString:YES];
@@ -93,7 +88,6 @@
     [self setButtonColor:self.answerThreeButton status:[self.quizGame isAnswerCorrect:self.answerThreeButton.currentTitle]];
     [self setButtonColor:self.answerFourButton status:[self.quizGame isAnswerCorrect:self.answerFourButton.currentTitle]];
     self.scoreLabel.text = [self.quizGame returnScore];
-    
 }
 
 - (void) enableButtons:(UIButton*)button {
@@ -108,14 +102,11 @@
     } else {
         button.backgroundColor = [UIColor redColor];
         button.enabled = NO;
-       
     }
-    
 }
 
 - (void) changeUi:(bool)status {
     // fixa en array och loopa? För att det blir mycket upprepningar!?
-    
     self.answerOneButton.hidden = status;
     self.answerTwoButton.hidden = status;
     self.answerThreeButton.hidden = status;
@@ -129,10 +120,7 @@
     } else {
         self.playAgainButton.hidden = YES;
     }
-    
 }
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
