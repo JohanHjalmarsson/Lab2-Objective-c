@@ -45,7 +45,7 @@
     [self enableButtons:self.answerTwoButton];
     [self enableButtons:self.answerThreeButton];
     [self enableButtons:self.answerFourButton];
-    self.scoreLabel.text = [self.quizGame returnScore];
+    self.scoreLabel.text = @"";
     self.correctAnswerLabel.text = @"";
     self.questionTextView.text = [self.quizGame getQuestion];
     [self.answerOneButton setTitle:[self.quizGame getAnswerOne] forState:UIControlStateNormal];
@@ -71,6 +71,7 @@
         [self startGame];
     } else {
         [self changeUi:YES];
+        self.scoreLabel.text = [self.quizGame returnScore];
     }
 }
 - (IBAction)playAgainClicked:(id)sender {
@@ -87,7 +88,7 @@
     [self setButtonColor:self.answerTwoButton status:[self.quizGame isAnswerCorrect:self.answerTwoButton.currentTitle]];
     [self setButtonColor:self.answerThreeButton status:[self.quizGame isAnswerCorrect:self.answerThreeButton.currentTitle]];
     [self setButtonColor:self.answerFourButton status:[self.quizGame isAnswerCorrect:self.answerFourButton.currentTitle]];
-    self.scoreLabel.text = [self.quizGame returnScore];
+    
 }
 
 - (void) enableButtons:(UIButton*)button {

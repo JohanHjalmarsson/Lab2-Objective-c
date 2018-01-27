@@ -88,7 +88,7 @@
     self.score++;
 }
 - (NSString*)returnScore {
-    NSString *score = [NSString stringWithFormat:@"Du har %i av 5 poäng", self.score];
+    NSString *score = [NSString stringWithFormat:@"Du fick %i av 5 poäng", self.score];
     return score;
 }
 
